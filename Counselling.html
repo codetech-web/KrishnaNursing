@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Counselling</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <style>
+    /* open dropdown on hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* remove Bootstrap click behavior spacing */
+    .dropdown-menu {
+      margin-top: 0;
+    }
+
+    /* style arrow transition */
+    .nav-link.dropdown-toggle::after {
+      transition: transform 0.3s ease;
+    }
+
+    /* flip arrow when hovered */
+    .nav-item.dropdown:hover .nav-link.dropdown-toggle::after {
+      transform: rotate(180deg);
+    }
+
+    #card {
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    /* Image style (fixed overflow issue) */
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+
+    i {
+      font-size: 15px;
+    }
+
+    #p {
+      text-align: justify;
+      margin-left: -10px;
+    }
+
+    .i {
+      margin-right: 15px;
+      margin-left: 30px;
+      color: rgb(126, 209, 242);
+      font-size: 20px;
+      border: 1.5px solid rgb(225, 223, 223);
+      border-radius: 60px;
+      padding: 5px;
+    }
+
+    #fb:hover {
+      color: rgb(5, 134, 240);
+    }
+
+    #insta:hover {
+      color: rgb(240, 96, 213);
+    }
+
+    #wh:hover {
+      color: rgb(37, 211, 102);
+    }
+
+    #ph:hover {
+      color: rgb(2, 138, 2);
+    }
+
+    #mail:hover {
+      color: rgb(240, 96, 213);
+    }
+
+    #com:hover {
+      color: rgb(5, 134, 240);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid ">
+    <div class="row text-center p-2">
+      <div class="col-12 col-sm-6 col-md-3">
+        <!-- Empty / Logo --><img src="./logo2.png" alt="logo" height="80" width="60" class="logo">
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <i class="bi bi-telephone-fill  fst-normal" id="call"> <b>EMERGENCY</b></i>
+        <p>+91 422 223 4508</p>
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <i class="bi bi-clock-fill fst-normal" id="clock"> <b>WORK HOURS</b></i>
+        <p>24/7 Everyday</p>
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <i class="bi bi-geo-alt-fill fst-normal" id="location"> <b>LOCATION</b></i>
+        <p>Gandhipuram, Coimbatore</p>
+
+      </div>
+    </div>
+
+
+    <div class="row ">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(1, 168, 1);">
+        <div class="container">
+
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="servicesDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./Counselling.html">Counselling Services</a></li>
+                  <li><a class="dropdown-item" href="./internship.html">Internship Training</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Research</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Contact Us</a>
+              </li>
+
+              <li class="nav-item">
+                <button class="btn btn-light ms-lg-3 mt-2 mt-lg-0" style="border-radius: 50px;">
+                  Student Registration
+                </button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row text-center p-3">
+      <h2>Krishna Nursing Home</h2>
+      <h3>Counselling Services</h3>
+    </div>
+
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4">
+        <img src="" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px; height: 200px;" alt="Dr.P.Balu">
+      </div>
+      <div class="col-12 col-md-6 ">
+        <p id="p">He completed his training in psychiatry in Madurai Medical College under doyen of Psychiatry Dr. Vengoba Rao.
+          He is the ex-president Indian Psychiatric Society, Tamil Nadu Chapter and Lifetime awardee of Indian Medical
+          Association
+
+          He has been committed to psychiatry since 1974.He is the second psychiatrist to practice in Coimbatore. He is
+          a specialist in the treatment of deaddiction of various substances. He established a dedicated deaddiction
+          programme in the city of Coimbatore. His philosophy of follow ups for the patients in remission is well
+          recognized by the high retention of the patients. He was the first to establish Coimbatore Alcoholic Anonymous
+          in 1982. He has displayed a great deal of passion in society under corporate social responsibility,
+          coordinating along with Coimbatore Municipal Corporation. He has treated around 350 conservancy workers. Along
+          with Revenue officials of Coimbatore, he has created awareness about illicit alcohol abuse in public. His
+          other areas of interest inlcude family therapy, mental disorders and non-invasive treatments.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4">
+        <img src="" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px; height: 200px;"
+          alt="Dr.B.Ravishankar">
+      </div>
+      <div class="col-12 col-md-6 ">
+        <p id="p">Dr.B.Ravishankar is a proficient psychiatrist graduated from Christian Medical College, Vellore. He has been
+          practicing for 21 years in psychiatry and psychology. He treats a wide range of mental disorders across
+          different age groups and excels in treatment of psychological issues in medically ill patients.
+
+          His practice as a consultant extends to GKNMH Ganga Hospital, Aadhi Medical Centre. He was previously at
+          Hunter Mental Health, Australia as the Chief Medical Officer. He is a veteran at an array of interventions in
+          counselling and psychotherapy. His specialization includes cognitive behavioural therapy, parent management
+          training, dealing with interpersonal issues and deaddiction. He has been running a rehabilitation home at the
+          facility for 8 years. He has a keen research interest in the cognitive neurosciences specifically the dorso
+          lateral prefrontal cortex, currently spearheading the study on Tamil translated version of metacognitive
+          therapy in patients with schizophrenia. Besides his research endeavours, He is patron of educating the
+          upcoming generation. He is the principal of Krishna Human Behavioural Science and conducts weekend classes for
+          students from psychology and other allied health science disciplines. He runs three courses namely: Masters
+          Diploma in Medical Psychology, Post Graduate Diploma in Counselling Psychology, Certificate Course in Guidance
+          and Counselling </p>
+      </div>
+    </div>
+
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4">
+        <img src="" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px; height: 200px;"
+          alt="Ms.Raghavi">
+      </div>
+      <div class="col-12 col-md-6 ">
+        <p id="p">Ms.Raghavi, completed masters in child and adolescent psychopathology from Panjab University, Chandigarh. Her
+          primary area of interest is disorders of childhood, their assessment and intervention. Trained in assessment
+          and intervention of learning disability, autism, brain gym and instrumental enrichment under Joy Lal Memorial
+          Society’s Optimizing Disability Education (ODE), Chandigarh. Previously conducted workshops at Delhi Public
+          School and private schools at Khanna, Panjab. She runs a specialized learning disability clinic at Krishna
+          Nursing Home. She deals with issues such as intelligence, learning disability, enhancing child education,
+          attention deficit hyperactivity disorder and emotional disturbances in children. Her treatment process
+          involves extensive and wholesome assessment which includes assessing curriculum and psycho social problems.
+          Followed by one on one individualized intervention using customized remedial materials, parent management
+          training programme. Additionally, she handles adolescent’s emotional problems using cognitive behavioural
+          therapy.</p>
+      </div>
+    </div>
+
+
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4">
+        <img src="" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px; height: 200px;"
+          alt="Ms.Prathiba">
+      </div>
+      <div class="col-12 col-md-6 ">
+        <p id="p">Ms.Prathiba is a qualified social worker, completed B.Ed at RKR Educational Institution, Udumalpet.
+          Previously worked as Her area of interest is in emotional disturbances of adults, counselling for deaddiction.
+          Before she joined Krishna Nursing Home, she was working as an assistant professor at Vidya Sagar College of
+          Arts and Science, Udumalpet. She is interested in supportive counselling. She is involved in home based
+          counselling service and organizing community awareness programmes
+        </p>
+      </div>
+    </div>
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4">
+        <img src="" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px; height: 200px;"
+          alt="Mr.Manikumar">
+      </div>
+      <div class="col-12 col-md-6 ">
+        <p id="p">Mr.Manikumar is a qualified social worker. His area of interest is in rehabilitation psychiatry. He looks
+          after the rehabilitation ward, applying rehabilitation principles like psychoeducation of family, token
+          economy, social skills training, occupational therapy, improving activities of daily living and vocational
+          rehabilitation. Graduate from Madurai institute of social sciences, facilitating activities among immune
+          compromised children
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <footer class="container-fluid ">
+    <div class="row bg-dargk text-white mt-5 p-4" style="background-color: black;">
+      <div class="col-sm-4 mb-4">
+        <h3>Krishna Nursing Home</h3>
+        <p style="color: white;margin-left: 30px;padding-top: 10px;">
+          6-AB, Swarnambika Layout, <br>
+          Ram Nagar, Coimbatore, <br>
+          Tamil Nadu 641009
+          <br>
+        </p>
+        <p style="color: white;">
+          <i class="bi bi-telephone i" id="ph"></i>
+          +91 422 223 4508 <br> <br>
+          <i class="bi bi-envelope i" id="mail"></i> drravishankarbalu@gmail.com <br> <br>
+          <i class="bi bi-globe i" id="com"></i> www.krishnanursinghome.com
+
+        </p>
+
+
+
+
+      </div>
+      <div class="col-sm-4 mb-4">
+        <h3>Quick Links</h3>
+        <ul style="list-style-type: none; padding: 0; color:white; margin-left: 50px;padding-top: 10px;">
+          <li><a href="#" style="text-decoration: none; color:white;">Home</a></li>
+          <li><a href="about.html" style="text-decoration: none; color: white;">About</a></li>
+          <li><a href="#" style="text-decoration: none; color: white;">Services</a></li>
+          <li><a href="#" style="text-decoration: none; color: white;">Research</a></li>
+          <li><a href="#" style="text-decoration: none; color:white;">Contact Us</a></li>
+        </ul>
+
+      </div>
+      <div class="col-sm-4 mb-4">
+        <h3>Follow Us</h3>
+        <br>
+        <i class="bi bi-facebook i" id="fb"></i>
+        <i class="bi bi-instagram i" id="insta"></i>
+        <i class="bi bi-whatsapp i" id="wh"></i>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

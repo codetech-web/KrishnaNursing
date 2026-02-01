@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Counselling</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <style>
+    /* open dropdown on hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* remove Bootstrap click behavior spacing */
+    .dropdown-menu {
+      margin-top: 0;
+    }
+
+    /* style arrow transition */
+    .nav-link.dropdown-toggle::after {
+      transition: transform 0.3s ease;
+    }
+
+    /* flip arrow when hovered */
+    .nav-item.dropdown:hover .nav-link.dropdown-toggle::after {
+      transform: rotate(180deg);
+    }
+
+    #card {
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    /* Image style (fixed overflow issue) */
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border: 2px solid rgb(209, 248, 209);
+      display: block;
+    }
+
+    i {
+      font-size: 15px;
+    }
+
+
+    .i {
+      margin-right: 15px;
+      margin-left: 30px;
+      color: rgb(126, 209, 242);
+      font-size: 20px;
+      border: 1.5px solid rgb(225, 223, 223);
+      border-radius: 60px;
+      padding: 5px;
+    }
+
+    #fb:hover {
+      color: rgb(5, 134, 240);
+    }
+
+    #insta:hover {
+      color: rgb(240, 96, 213);
+    }
+
+    #wh:hover {
+      color: rgb(37, 211, 102);
+    }
+
+    #ph:hover {
+      color: rgb(2, 138, 2);
+    }
+
+    #mail:hover {
+      color: rgb(240, 96, 213);
+    }
+
+    #com:hover {
+      color: rgb(5, 134, 240);
+    }
+
+    /* doctors */
+    img {
+      border-radius: 5px;
+      border: 1px solid rgb(243, 239, 239);
+    }
+
+    .feature-card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid ">
+    <div class="row text-center p-2">
+      <div class="col-12 col-sm-6 col-md-3">
+        <!-- Empty / Logo --><img src="./logo2.png" alt="logo" height="80" width="60" class="logo">
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <i class="bi bi-telephone-fill  fst-normal" id="call"> <b>EMERGENCY</b></i>
+        <p>+91 422 223 4508</p>
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <i class="bi bi-clock-fill fst-normal" id="clock"> <b>WORK HOURS</b></i>
+        <p>24/7 Everyday</p>
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <i class="bi bi-geo-alt-fill fst-normal" id="location"> <b>LOCATION</b></i>
+        <p>Gandhipuram, Coimbatore</p>
+
+      </div>
+    </div>
+
+
+    <div class="row ">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(1, 168, 1);">
+        <div class="container">
+
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="servicesDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Counselling.html">Counselling Services</a></li>
+                  <li><a class="dropdown-item" href="#">Internship Training</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Research</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Contact Us</a>
+              </li>
+
+              <li class="nav-item">
+                <button class="btn btn-light ms-lg-3 mt-2 mt-lg-0" style="border-radius: 50px;">
+                  Student Registration
+                </button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="container-fluid">
+    <div class="row text-center p-5">
+      <h4>Faces of Healing </h4>
+      <h5>Meet the dedicated doctors committed to your health and well-being</h5>
+    </div>
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4">
+        <img src="./Raghavi.jpg" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px; height: 200px;"
+          alt="Raghav">
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate qui aperiam reiciendis iste tempora
+          nisi
+          quasi tempore id ab assumenda atque repellendus modi doloribus exercitationem, odit pariatur delectus
+          repudiandae consectetur.</p>
+      </div>
+    </div>
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate qui aperiam reiciendis iste tempora
+          nisi
+          quasi tempore id ab assumenda atque repellendus modi doloribus exercitationem, odit pariatur delectus
+          repudiandae consectetur.</p>
+      </div>
+      <div class="col-12 col-md-6 mb-4 text-center">
+        <img src="./Pradeepa.jfif" class="img-fluid  mb-3" style="max-width: 200px; margin-left: 100px;height: 200px;"
+          alt="Raghav">
+      </div>
+    </div>
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4 text-center">
+        <img src="./Ravi_Shankar.jfif" class="img-fluid  mb-3"
+          style="max-width: 200px;margin-left: 100px;height: 200px;" alt="Raghav">
+      </div>
+
+      <div class="col-12 col-md-6 mb-4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate qui aperiam reiciendis iste tempora
+          nisi
+          quasi tempore id ab assumenda atque repellendus modi doloribus exercitationem, odit pariatur delectus
+          repudiandae consectetur.</p>
+      </div>
+
+    </div>
+
+    <div class="row feature-card bg-light p-4 mb-4">
+
+      <div class="col-12 col-md-6 mb-4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate qui aperiam reiciendis iste tempora
+          nisi
+          quasi tempore id ab assumenda atque repellendus modi doloribus exercitationem, odit pariatur delectus
+          repudiandae consectetur.</p>
+      </div>
+      <div class="col-12 col-md-6 mb-4 text-center">
+        <img src="./Sri_Durga.jfif" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px;height: 200px;"
+          alt="Raghav">
+      </div>
+    </div>
+
+    <div class="row feature-card bg-light p-4 mb-4">
+      <div class="col-12 col-md-6 mb-4 text-center">
+        <img src="./balu.jfif" class="img-fluid  mb-3" style="max-width: 200px;margin-left: 100px;height: 200px;"
+          alt="Raghav">
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate qui aperiam reiciendis iste tempora
+          nisi
+          quasi tempore id ab assumenda atque repellendus modi doloribus exercitationem, odit pariatur delectus
+          repudiandae consectetur.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+<div class="container text-center mt-5">
+  <h3>Need an Appointment?</h3>
+  <p>Our doctors are here to help you.</p>
+  <a href="appointment.html" class="btn btn-success" >
+    Book Appointment
+  </a>
+</div>
+
+
+
+
+
+  <footer class="container-fluid ">
+    <div class="row bg-dargk text-white mt-5 p-4" style="background-color: black;">
+      <div class="col-sm-4 mb-4">
+        <h3>Krishna Nursing Home</h3>
+        <p style="color: white;margin-left: 30px;padding-top: 10px;">
+          6-AB, Swarnambika Layout, <br>
+          Ram Nagar, Coimbatore, <br>
+          Tamil Nadu 641009
+          <br>
+        </p>
+        <p style="color: white;">
+          <i class="bi bi-telephone i" id="ph"></i>
+          +91 422 223 4508 <br> <br>
+          <i class="bi bi-envelope i" id="mail"></i> drravishankarbalu@gmail.com <br> <br>
+          <i class="bi bi-globe i" id="com"></i> www.krishnanursinghome.com
+
+        </p>
+
+
+
+
+      </div>
+      <div class="col-sm-4 mb-4">
+        <h3>Quick Links</h3>
+        <ul style="list-style-type: none; padding: 0; color:white; margin-left: 50px;padding-top: 10px;">
+          <li><a href="#" style="text-decoration: none; color:white;">Home</a></li>
+          <li><a href="about.html" style="text-decoration: none; color: white;">About</a></li>
+          <li><a href="#" style="text-decoration: none; color: white;">Services</a></li>
+          <li><a href="#" style="text-decoration: none; color: white;">Research</a></li>
+          <li><a href="#" style="text-decoration: none; color:white;">Contact Us</a></li>
+        </ul>
+
+      </div>
+      <div class="col-sm-4 mb-4">
+        <h3>Follow Us</h3>
+        <br>
+        <i class="bi bi-facebook i" id="fb"></i>
+        <i class="bi bi-instagram i" id="insta"></i>
+        <i class="bi bi-whatsapp i" id="wh"></i>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
